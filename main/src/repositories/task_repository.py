@@ -3,7 +3,7 @@ from src.domains.task import Task
 
 class TaskRepository:
     def __init__(self):
-        self._tasks = []  # Przykładowo: lista w pamięci zamiast bazy danych
+        self._tasks = [] 
 
     def add_task(self, task: Task) -> Task:
         task.id = len(self._tasks) + 1
